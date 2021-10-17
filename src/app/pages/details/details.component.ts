@@ -10,8 +10,8 @@ import { forkJoin } from 'rxjs';
 })
 export class DetailsComponent implements OnInit {
 
-  private urlPokemon: string = 'https:/pokeapi.co/api/v2/pokemon'
-  private urlName: string = 'https:/pokeapi.co/api/v2/pokemon-species'
+  private urlPokemon: string = 'https://pokeapi.co/api/v2/pokemon';
+  private urlName: string = 'https://pokeapi.co/api/v2/pokemon-species';
 
   public pokemon: any;
   public itsLoaded: boolean = false;
@@ -35,14 +35,10 @@ export class DetailsComponent implements OnInit {
       res => {
         this.pokemon = res;
         this.itsLoaded = true;
-      
       },
       error => {
         this.apiError = true;
       }
     );
-
-    return console.log(id);
   }
-
 }
