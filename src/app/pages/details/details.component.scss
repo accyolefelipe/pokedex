@@ -27,6 +27,13 @@
                 font-size: rem-calc(65);
                 color: rgba(255, 255, 255, 0.1);
             }
+
+            h1,
+			h2 {
+				//Remove Bug Animation
+				-webkit-animation-fill-mode: none !important;
+				animation-fill-mode: none !important;
+			}
         }
 
         .pokemon__status{
@@ -38,6 +45,10 @@
                 left: rem-calc(30);
                 max-width: rem-calc(190);
                 z-index: 10;
+
+                //Remove Bug Animation
+				-webkit-animation-fill-mode: none !important;
+				animation-fill-mode: none !important;
             }
 
             &__statistics {
@@ -72,39 +83,37 @@
                     }
                 }
             }
-            
+        }    
 
-            @media (max-width: 420px) {
-                margin-top: rem-calc(10);
-    
-                .pokemon__names {
-                    h1 {
-                        font-size: rem-calc(20);
-                    }
-    
-                    h2 {
-                        top: rem-calc(35);
-                        font-size: rem-calc(20);
-                    }
+        @media (max-width: 420px) {
+            margin-top: rem-calc(10);
+
+            .pokemon__names {
+                h1 {
+                    font-size: rem-calc(20);
                 }
+
+                h2 {
+                    top: rem-calc(35);
+                    font-size: rem-calc(20);
+                }
+            }
     
-                .pokemon__status {
-                    position: relative;
-    
-                    img {
-                        position: absolute;
-                        top: rem-calc(-80);
-                        left: rem-calc(0);
-                        max-width: rem-calc(100);
-                    }
-    
-                    &__statistics {
-                        min-height: 57vh;
-                        padding-top: rem-calc(50);
-                    }
+            .pokemon__status {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: rem-calc(-80);
+                    left: rem-calc(0);
+                    max-width: rem-calc(100);
+                }
+
+                &__statistics {
+                    min-height: 57vh;
+                    padding-top: rem-calc(50);
                 }
             }
         }
     }
-
 }
