@@ -3,7 +3,7 @@
 Projeto desenvolvido com Angular no qual é consumido uma API de Pokemons exibindo listagem e detalhe de pokemons.
 Com destaque na utilização de SCSS e animações.
 
-•	pokedex-accyolefelipe.vercel.app
+https://pokedex-accyolefelipe.vercel.app
 
 ## 🚀 Começando
 
